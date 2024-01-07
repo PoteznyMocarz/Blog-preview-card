@@ -98,3 +98,22 @@ p {
     border-radius: 20px;
     left: 16px;
 }
+
+@media (max-width: 450px) {
+    body {
+        padding: 20px;
+    }
+
+    .background-effect {
+        left: 10px;
+        top: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
