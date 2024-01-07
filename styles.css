@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow-color: hsl(47, 88%, 63%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-color: hsl(0, 0%, 50%);
+    --black-color: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: var(--yellow-color);
+}
+
+.container {
+    background-color: var(--white-color);
+    max-width: 400px;
+    padding: 25px;
+    height: fit-content;
+    border-radius: 20px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.topic-name {
+    background-color: var(--yellow-color);
+    width: fit-content;
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.date {
+    display: block;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+h2 {
+    margin-top: 13px;
+    width: fit-content;
+}
+
+h2:hover {
+    color: var(--yellow-color);
+    cursor: pointer;
+}
+
+p {
+    color: var(--grey-color);
+    margin-top: 17px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.user-avatar {
+    width: 33px;
+    height: 33px;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.user-section {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.background-effect {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: var(--black-color);
+    z-index: -1;
+    top: 16px;
+    border-radius: 20px;
+    left: 16px;
+}
